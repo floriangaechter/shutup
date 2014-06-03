@@ -1,0 +1,25 @@
+{
+  "name": "Shut up!",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension hides all traces of comments on 20 Minuten…",
+  "homepage_url": "http://github.com/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "http://www.20min.ch/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://www.20min.ch/*"
+      ],
+      "css": [
+        "src/inject/inject.css"
+      ]
+    }
+  ]
+}

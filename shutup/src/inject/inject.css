@@ -1,0 +1,5 @@
+li[data-vr-contentbox*=talkback],
+#talkback,
+.navButtonIcon-comments {
+	display: none !important;
+}
